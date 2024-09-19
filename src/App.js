@@ -2,6 +2,9 @@
 import './App.css';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, {useState, useEffect} from 'react';
+import Signup from './pages/Signup';
+import Login from './pages/Login';
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import Blogs from "./pages/Blogs";
@@ -14,6 +17,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<Home />} />
+        <Route path="/signup" element={<Signup/>}/>
+        <Route path="/login" element={<Login/>}/>
         <Route path="blogs" element={<Blogs />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<NoPage />} />

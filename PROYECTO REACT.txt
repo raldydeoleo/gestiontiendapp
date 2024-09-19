@@ -1,0 +1,3 @@
+//Este proyecto integra react con una plantilla html
+//Ademas de tener funcionalidades en firebase y routing
+//probado por ultima vez 05-10-2023
